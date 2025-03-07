@@ -1,0 +1,155 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dad!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Title -->
+    <div class="title">
+        <h1>Happy Birthday, Dad! 🎉</h1>
+    </div>
+
+    <!-- Birthday Card Section -->
+    <div class="birthday-card">
+        <!-- Cake and Girl Container (Side by Side) -->
+        <div class="main-container">
+            <!-- Cake and Plate -->
+            <div class="cake-plate-container">
+                <div class="cake"></div>
+                <div class="plate"></div>
+
+                <!-- Candles with Flames on top of the Cake -->
+                <div class="candles-container">
+                    <div class="candle" onclick="toggleFlame(this)">
+                        <div class="flame" id="flame1"></div>
+                    </div>
+                    <div class="candle" onclick="toggleFlame(this)">
+                        <div class="flame" id="flame2"></div>
+                    </div>
+                    <div class="candle" onclick="toggleFlame(this)">
+                        <div class="flame" id="flame3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Girl Character -->
+            <div class="girl">
+                <div class="head">
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="body">
+                    <div class="hand left"></div>
+                    <div class="hand right"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speech Bubble -->
+        <div class="speech-bubble" id="speechBubble">
+            <p>Happy Birthday, Dad! 🎉</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Toggle the flame on/off when clicking the candle
+        function toggleFlame(candle) {
+            const flame = candle.querySelector('.flame');
+            if (flame.style.opacity === '0') {
+                flame.style.opacity = '1'; // Show flame
+            } else {
+                flame.style.opacity = '0'; // Hide flame
+            }
+        }
+
+        // Hide speech bubble after 5 seconds
+        setTimeout(function() {
+            document.getElementById("speechBubble").style.display = "none";
+        }, 5000); // 5000ms = 5 seconds
+    </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dad!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Title -->
+    <div class="title">
+        <h1>Happy Birthday, Dad! 🎉</h1>
+    </div>
+
+    <!-- Birthday Card Section -->
+    <div class="birthday-card">
+        <!-- Cake and Girl Container (Side by Side) -->
+        <div class="main-container">
+            <!-- Cake and Plate -->
+            <div class="cake-plate-container">
+                <div class="cake"></div>
+                <div class="plate"></div>
+
+                <!-- Candles with Flames on top of the Cake -->
+                <div class="candles-container">
+                    <div class="candle" onclick="toggleFlame(this)">
+                        <div class="flame" id="flame1"></div>
+                    </div>
+                    <div class="candle" onclick="toggleFlame(this)">
+                        <div class="flame" id="flame2"></div>
+                    </div>
+                    <div class="candle" onclick="toggleFlame(this)">
+                        <div class="flame" id="flame3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Girl Character -->
+            <div class="girl">
+                <div class="head">
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="body">
+                    <div class="hand left"></div>
+                    <div class="hand right"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speech Bubble -->
+        <div class="speech-bubble" id="speechBubble">
+            <p>Happy Birthday, Dad! 🎉</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        // Toggle the flame on/off when clicking the candle
+        function toggleFlame(candle) {
+            const flame = candle.querySelector('.flame');
+            if (flame.style.opacity === '0') {
+                flame.style.opacity = '1'; // Show flame
+            } else {
+                flame.style.opacity = '0'; // Hide flame
+            }
+        }
+
+        // Hide speech bubble after 5 seconds
+        setTimeout(function() {
+            document.getElementById("speechBubble").style.display = "none";
+        }, 5000); // 5000ms = 5 seconds
+    </script>
+</body>
+</html>
+>>>>>>> 9e7cfee (Initial commit)
